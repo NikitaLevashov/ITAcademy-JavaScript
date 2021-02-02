@@ -1,0 +1,152 @@
+<!DOCTYPE HTML>
+<html>
+ 
+    <style>
+body {
+  font-size: 0;
+}
+
+.general {
+  width: 33%;
+  height: 200px;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+ 
+}
+ 
+#contentYellow {
+  width: 200px;
+  height: 60px;
+  background: yellow;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-style: solid
+}
+
+#contentBlue {
+  width: 200px;
+  height: 60px;
+  background: blue;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-style: solid
+}
+#contentGreen {
+  width: 200px;
+  height: 60px;
+  background: green;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-style: solid
+}
+    </style>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>JQueryHomeWork</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+   </head>
+   
+   <body>
+           <div class="general">
+            <div id="contentYellow">
+           
+           
+            </div>
+          </div>
+          <div class="general">
+            <div id="contentBlue">
+           
+           
+            </div>
+          </div>
+          <div class="general" >
+            <div id="contentGreen">
+           
+            </div>
+          </div> 
+ </body>
+
+ <script type="text/javascript">
+
+
+$('#contentGreen').click(function(){
+    $('body').css('background', 'green');
+    $('#contentGreen').off("mouseleave");
+    })
+
+$('#contentGreen').mouseleave(function(){
+    $('body').css('background', 'white');
+    })
+
+$('#contentGreen').mouseover(function(){
+     $('body').css('background', 'green');
+     })
+
+$('#contentYellow').click(function(){
+    $('body').css('background', 'yellow');
+    $('#contentYellow').off("mouseleave");
+   })
+
+$('#contentYellow').mouseleave(function(){
+   $('body').css('background', 'white');
+   })
+
+$('#contentYellow').mouseover(function(){
+    $('body').css('background', 'yellow');
+    })
+
+ $('#contentBlue').click(function(){
+    $('body').css('background', 'blue');
+    $('#contentBlue').off("mouseleave");
+    })
+    
+$('#contentBlue').mouseleave(function(){
+   $('body').css('background', 'white');
+    })
+
+$('#contentBlue').mouseover(function(){
+    $('body').css('background', 'blue');
+    })
+
+  </script>
+ 
+</html>
+
+
+
+
+
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

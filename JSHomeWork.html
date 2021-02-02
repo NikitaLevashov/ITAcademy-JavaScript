@@ -1,0 +1,163 @@
+<!DOCTYPE HTML>
+<html>
+ 
+    <style>
+body {
+  font-size: 0;
+}
+ 
+.general {
+  width: 33%;
+  height: 200px;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+ 
+}
+ 
+#contentYellow {
+  width: 200px;
+  height: 60px;
+  background: yellow;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-style: solid
+}
+
+#contentBlue {
+  width: 200px;
+  height: 60px;
+  background: blue;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-style: solid
+}
+#contentGreen {
+  width: 200px;
+  height: 60px;
+  background: green;
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-style: solid
+}
+    </style>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>JSHomeWork</title>
+  </head>
+   
+   <body>
+           <div class="general">
+            <div id="contentYellow">
+                      
+            </div>
+          </div>
+          <div class="general">
+            <div id="contentBlue">
+                      
+            </div>
+          </div>
+          <div class="general" >
+            <div id="contentGreen">
+           
+            </div>
+          </div> 
+ </body>
+    <script>
+        function setColorGreenMouseOver(e){
+       
+          if(e.type==="mouseover")
+            document.body.style.background = "green";
+          
+        }
+
+        function setColorGreenMouseOut(e){
+            
+          if(e.type==="mouseout")
+            document.body.style.background ="white";
+
+        }
+
+        function setColorGreenClick(e){
+       
+          if(e.type==="click"){
+            document.body.style.background = "green";
+            contentGreen.removeEventListener('mouseout', setColorGreenMouseOut);}
+                     
+        }
+
+        function setColorYellowMouseOver(e){
+       
+          if(e.type==="mouseover")
+            document.body.style.background = "yellow";
+             
+        }
+
+        function setColorYellowMouseOut(e){
+            
+          if(e.type==="mouseout")
+            document.body.style.background ="white";
+  
+        }
+
+        function setColorYellowClick(e){
+       
+          if(e.type==="click"){
+            document.body.style.background = "yellow";
+            contentYellow.removeEventListener('mouseout', setColorYellowMouseOut);}
+               
+        }
+
+
+        function setColorBlueMouseOver(e){
+       
+          if(e.type==="mouseover")
+            document.body.style.background = "blue";
+         
+        }
+
+        function setColorBlueMouseOut(e){
+            
+          if(e.type==="mouseout")
+             document.body.style.background ="white";
+   
+        }
+
+        function setColorBlueClick(e){
+       
+          if(e.type==="click"){
+             document.body.style.background = "blue";
+             contentBlue.removeEventListener('mouseout', setColorBlueMouseOut);}
+            
+        }
+
+        let contentGreen = document.getElementById("contentGreen");
+        contentGreen.addEventListener("mouseout", setColorGreenMouseOut);
+        contentGreen.addEventListener("mouseover", setColorGreenMouseOver);
+        contentGreen.addEventListener("click", setColorGreenClick);
+                   
+        let contentYellow = document.getElementById("contentYellow");
+        contentYellow.addEventListener("mouseout", setColorYellowMouseOut);
+        contentYellow.addEventListener("mouseover", setColorYellowMouseOver);
+        contentYellow.addEventListener("click", setColorYellowClick);
+          
+        let contentBlue = document.getElementById("contentBlue");
+        contentBlue.addEventListener("mouseover", setColorBlueMouseOver);
+        contentBlue.addEventListener("mouseout", setColorBlueMouseOut);
+        contentBlue.addEventListener("click", setColorBlueClick);
+
+    </script>
+
+</html>
